@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css"  href="{% static 'css/jnoty.css' %}">
 
   <!-- Custom stylesheet -->
-  <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}?v=3.4">
+  <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
   <link rel="stylesheet" type="text/css" id="style_sheet" href="{% static "css/skins/red.css" %} ">
 
   <!-- Favicon icon -->
@@ -36,7 +36,7 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="{% static "css/ie10-viewport-bug-workaround.css" %}">
+  <link rel="stylesheet" href="{% static "css/ie10-viewport-bug-workaround.css" %}"  type="text/css" >
 
   <script  src="{% static "js/ie-emulation-modes-warning.js" %}"></script>
 </head>
@@ -79,8 +79,8 @@
                     <div class="row modal-raw">
                         <div class="col-lg-6 modal-left">
                             <div class="item active">
-                                <img src="img/car-13.jpg" alt="best-car" class="img-fluid modalLabel-1">
-                                <img src="img/car-14.jpg" alt="best-car" class="img-fluid modalLabel-2">
+                                <img src="{% static "img/car-13.jpg" %}" alt="best-car" class="img-fluid modalLabel-1">
+                                <img src="{% static "img/car-14.jpg" %}" alt="best-car" class="img-fluid modalLabel-2">
                                 <div class="sobuz">
                                     <div class="price-box">
                                         <span class="del-2">$1050.00</span>
@@ -141,8 +141,8 @@
     </div>
 </div>
           <script src="{% static "js/jquery-2.2.0.min.js" %}"></script>
-          <script src="{% static 'js/popper.min.js' %}"></script>
-          <script src="{% static 'js/bootstrap.min.js' %}"></script>
+          <script src="{% static "js/popper.min.js" %}"></script>
+          <script src="{% static "js/bootstrap.min.js" %}"></script>
           <script  src="{% static "js/bootstrap-submenu.js" %}"></script>
           <script  src="{% static "js/rangeslider.js" %}"></script>
           <script  src="{% static "js/jquery.mb.YTPlayer.js" %}"></script>
