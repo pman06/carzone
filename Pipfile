@@ -8,6 +8,8 @@ django = "==3.0.1"
 psycopg2-binary = "==2.8.4"
 pillow = "==7.0"
 django-phonenumber-field = {version = "==5.0.0", extras = ["phonenumbers"]}
+django-ckeditor = "==5.6.1"
+django-multiselectfield = "==0.1.12"
 
 [dev-packages]
 

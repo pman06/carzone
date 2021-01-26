@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'cars.apps.CarsConfig',
     'phonenumber_field',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
