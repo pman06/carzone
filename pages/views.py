@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from .models import Team, BusinessInfo
+from cars.models import Car
 # Create your views here.
 
 def home(request):
     try:
+        featured_cars = Car.featured.all()
         teams = Team.objects.all()
         biz_info = BusinessInfo.objects.first()
         # print("Count", BusinessInfo.objects.all().count(), ' \n Bizzname: ',biz_info.email)
@@ -11,7 +13,7 @@ def home(request):
         pass
     except BusinessInfo.DoesNotExist:
         pass
-    return render(request, "pages/home.html", {'teams':teams, 'biz_info':biz_info, 'section':'home'})
+    return render(request, "pages/home.html", {'teams':teams, 'biz_info':biz_info, 'section':'home', 'featured_cars':featured_cars})
 
 def about(request):
     try:

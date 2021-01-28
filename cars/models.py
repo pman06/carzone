@@ -3,6 +3,10 @@ from datetime import datetime
 from ckeditor.fields import RichTextField
 from multiselectfield import MultiSelectField
 # Create your models here.
+class FeaturedManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(is_featured=True).order_by('-created_date')
+
 class Car(models.Model):
     condition_choice= (('new','new'),('used','used'))
     country_choice= (
@@ -270,7 +274,7 @@ class Car(models.Model):
     country = models.CharField(choices=country_choice, max_length=100)
     color = models.CharField(max_length=100)
     model = models.CharField(max_length=100)
-    year = models.IntegerField(('year'),choices=year_choice,max_length=100)
+    year = models.IntegerField(('year'),choices=year_choice)
     condition = models.CharField(choices=condition_choice ,max_length=100)
     price = models.IntegerField()
     description = RichTextField()
@@ -293,6 +297,11 @@ class Car(models.Model):
     no_of_owners = models.CharField(max_length=100)
     is_featured = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
+
+    #declare objects
+    objects = models.Manager()
+    featured = FeaturedManager()
+
 
     def __str__(self):
         return self.car_title
