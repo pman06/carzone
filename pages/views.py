@@ -5,6 +5,7 @@ from cars.models import Car
 
 def home(request):
     try:
+        latest_cars = Car.objects.all().order_by('-created_date')
         featured_cars = Car.featured.all()
         teams = Team.objects.all()
         biz_info = BusinessInfo.objects.first()
@@ -13,7 +14,11 @@ def home(request):
         pass
     except BusinessInfo.DoesNotExist:
         pass
-    return render(request, "pages/home.html", {'teams':teams, 'biz_info':biz_info, 'section':'home', 'featured_cars':featured_cars})
+    except Car.DoesNotExist:
+        pass
+    return render(request, "pages/home.html", {'teams':teams, 'biz_info':biz_info,
+                                                'section':'home', 'featured_cars':featured_cars,
+                                                'latest_cars':latest_cars})
 
 def about(request):
     try:

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'cars.apps.CarsConfig',
     'phonenumber_field',
     'ckeditor',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
