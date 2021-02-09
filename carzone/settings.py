@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'ckeditor',
     'django.contrib.humanize',
+    'django.contrib.postgres',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

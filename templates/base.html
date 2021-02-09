@@ -55,9 +55,12 @@
 <!-- Full Page Search -->
 <div id="full-page-search">
     <button type="button" class="close">×</button>
-    <form action="https://storage.googleapis.com/theme-vessel/carhouse/index.html#" class="search-header">
-        <input type="search" value="" placeholder="type keyword(s) here" />
-        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    <form action="{% url 'cars:search' %}" class="search-header">
+      {% if form %}{% endif %}
+      {% csrf_token %}
+      {{ form.keyword.errors }}
+      <input type="search" value="" name="keyword" placeholder="type keyword(s) here" />
+      <button type="submit" class="btn btn-sm button-theme">Search</button>
     </form>
 </div>
 

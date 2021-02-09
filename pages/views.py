@@ -9,7 +9,12 @@ def home(request):
         featured_cars = Car.featured.all()
         teams = Team.objects.all()
         biz_info = BusinessInfo.objects.first()
-        # print("Count", BusinessInfo.objects.all().count(), ' \n Bizzname: ',biz_info.email)
+        # search_fields = Car.objects.values('year','body_style', 'city', 'model').order_by('-created_date').distinct()
+        year_search_field = Car.objects.values_list('year', flat=True).distinct()
+        city_search_field = Car.objects.values_list('city', flat=True).distinct()
+        model_search_field = Car.objects.values_list('model', flat=True).distinct()
+        body_style_search_field = Car.objects.values_list('body_style', flat=True).distinct()
+
     except Team.DoesNotExist:
         pass
     except BusinessInfo.DoesNotExist:
@@ -18,7 +23,11 @@ def home(request):
         pass
     return render(request, "pages/home.html", {'teams':teams, 'biz_info':biz_info,
                                                 'section':'home', 'featured_cars':featured_cars,
-                                                'latest_cars':latest_cars})
+                                                'latest_cars':latest_cars,
+                                                'year_search_field':year_search_field,
+                                                'city_search_field':city_search_field,
+                                                'body_style_search_field':body_style_search_field,
+                                                'model_search_field':model_search_field})
 
 def about(request):
     try:

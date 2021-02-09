@@ -246,19 +246,47 @@ class Car(models.Model):
         year_choice.append((r,r))
 
     features_choice = (
-        ('Cruise Control', 'Cruise Control'),
-        ('Audio Interface', 'Audio Interface'),
-        ('Airbags', 'Airbags'),
-        ('Air Conditioning', 'Air Conditioning'),
-        ('Seat Heating', 'Seat Haating'),
-        ('Alarm System', 'Alarm System'),
-        ('Park Assist', 'Park Assist'),
-        ('Power Steering', 'Power Steering'),
-        ('Reversing Camera', 'Reversing Camera'),
-        ('Direct Fuel Injection', 'Direct Fuel Injection'),
-        ('Auto Start/Stop', 'Auto Start/Stop'),
-        ('Wind Deflector', 'Wind Deflector'),
-        ('Bluetooth Handset', 'Bluetooth Handset'),
+        ("Adaptive Cruise Control","Adaptive Cruise Control"),
+        ("Airbags","Airbags"),
+        ("Air Conditioning","Air Conditioning"),
+        ("Alarm System","Alarm System"),
+        ("Anti-theft Protection","Anti-theft Protection"),
+        ("Audio Interface","Audio Interface"),
+        ("Automatic Climate Control","Automatic Climate Control"),
+        ("Automatic Headlights","Automatic Headlights"),
+        ("Auto Start/Stop","Auto Start/Stop"),
+        ("Bi-Xenon Headlights","Bi-Xenon Headlights"),
+        ("Audio Interface","Audio Interface"),
+        ("Bluetooth Handset","Bluetooth Handset"),
+        ("BOSE Surround Sound","BOSE Surround Sound"),
+        ("Burmester Surround Sound","Burmester Surround Sound"),
+        ("CD/DVD Autochanger","CD/DVD Autochanger"),
+        ("Cruise Control","Cruise Control"),
+        ("Direct Fuel Injection","Direct Fuel Injection"),
+        ("Electric Parking Brake","Electric Parking Brake"),
+        ("Floor Mats","Floor Mats"),
+        ("Garage Door Opener","Garage Door Opener"),
+        ("Leather Package","Leather Package"),
+        ("Locking Rear Differential","Locking Rear Differential"),
+        ("Luggage Compartments","Luggage Compartments"),
+        ("Manual Transmission","Manual Transmission"),
+        ("Navigation Module","Navigation Module"),
+        ("Online Services","Online Services"),
+        ("ParkAssist","ParkAssist"),
+        ("Porsche Communication","Porsche Communication"),
+        ("CD/DVD Autochanger","CD/DVD Autochanger"),
+        ("Reversing Camera","Reversing Camera"),
+        ("Roll-over Protection","Roll-over Protection"),
+        ("Seat Heating","Seat Heating"),
+        ("Seat Ventilation","Seat Ventilation"),
+        ("Sound Package Plus","Sound Package Plus"),
+        ("Sport Chrono Package","Sport Chrono Package"),
+        ("Steering Wheel Heating","Steering Wheel Heating"),
+        ("Tire Pressure Monitoring","Tire Pressure Monitoring"),
+        ("Universal Audio Interface","Universal Audio Interface"),
+        ("Voice Control System","Voice Control System"),
+        ("Wind Deflector","Wind Deflector"),
+
     )
 
     door_choice = (
@@ -269,12 +297,12 @@ class Car(models.Model):
         ('6','6'),
     )
     car_title = models.CharField(max_length=255)
+    model = models.CharField(max_length=100)
     address = models.CharField(max_length = 255)
     city = models.CharField(max_length=64)
     state = models.CharField(max_length=64)
     country = models.CharField(choices=country_choice, max_length=100)
     color = models.CharField(max_length=100)
-    model = models.CharField(max_length=100)
     year = models.IntegerField(('year'),choices=year_choice)
     condition = models.CharField(choices=condition_choice ,max_length=100)
     price = models.IntegerField()
