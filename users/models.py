@@ -36,7 +36,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField('email address', max_length=255,unique=True)
     first_name = models.CharField('first name', max_length=255)
     last_name = models.CharField('last name', max_length=255)
-    username = models.CharField('username', max_length=255)
+    username = models.CharField('username', max_length=255, unique=True)
     # phone = models.PhoneNumberField(validators=[RegexValidator(r'^\d{4}-\d{3}-\d{4}$')])
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)

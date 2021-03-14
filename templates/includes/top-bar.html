@@ -12,12 +12,25 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-5">
         <ul class="top-social-media pull-right">
-          <li>
-            <a href="login.html" class="sign-in"><i class="fa fa-sign-in"></i> Login</a>
-          </li>
-          <li>
-            <a href="signup.html" class="sign-in"><i class="fa fa-user"></i> Register</a>
-          </li>
+          {% if user.is_authenticated %}
+            <li>
+              <a href="{% url 'account:dashboard' %}" class="sign-in"><i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="javascript:{document.getElementById('logout').submit()}" class="sign-in"><i class="fa fa-sign-out"></i> Logout</a>
+              <form id="logout" action="{% url 'account:logout'%}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="" value="">
+              </form>
+            </li>
+          {% else %}
+            <li>
+              <a href="{% url 'account:login' %}?next={{ request.path }}" class="sign-in"><i class="fa fa-sign-in"></i> Login</a>
+            </li>
+            <li>
+              <a href="{% url 'account:register' %}?next={{ request.path }}" class="sign-in"><i class="fa fa-user"></i> Register</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </div>

@@ -28,6 +28,13 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,14 +46,23 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
     'users.apps.UsersConfig',
+    'contacts.apps.ContactsConfig',
     'cars.apps.CarsConfig',
     'phonenumber_field',
     'ckeditor',
     'django.contrib.humanize',
     'django.contrib.postgres',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    #providers
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
 ]
 
-
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,6 +145,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS= (os.path.join(BASE_DIR, 'carzone/static'),)
@@ -140,3 +157,24 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 PHONENUMBER_DB_FORMAT = 'INTERNATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'US'
+
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR:'danger',
+}
+
+#Allauth settings
+LOGIN_URL = 'account:login'
+LOGIN_REDIRECT_URL = 'account:dashboard'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
+
+
+#Email Settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = '*************@gmail.com'
+EMAIIL_HOST_PASSWORD = '*********'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

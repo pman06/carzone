@@ -26,7 +26,7 @@ class BusinessInfo(models.Model):
     facebook_link = models.URLField()
     twitter_link = models.URLField()
     google_link = models.URLField()
-    
+
 
     def __str__(self):
         return self.business_name

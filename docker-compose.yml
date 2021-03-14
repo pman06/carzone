@@ -1,5 +1,6 @@
 version: '3'
 services:
+
   web:
     build: .
     command: python /code/manage.py runserver 0.0.0.0:8000
@@ -9,6 +10,19 @@ services:
       - .:/code
     depends_on:
       - db
+
+  rabbitmq:
+    hostname: 'myrabbit'
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+
+  celery_worker:
+    build: .
+    command: celery -A carzone worker -l INFO
+    depends_on:
+      - rabbitmq
+
 
   db:
     image: postgres:11

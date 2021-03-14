@@ -21,6 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls', namespace="pages")),
     path('cars/', include('cars.urls', namespace="cars")),
+    path('account/', include('users.urls', namespace='account')),
+    path('contacts/', include('contacts.urls', namespace='contacts')),
+    path('socialaccount/', include('allauth.urls')),
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

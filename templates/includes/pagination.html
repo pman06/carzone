@@ -1,0 +1,35 @@
+<div class="pagination-box p-box-2 text-center">
+    <nav aria-label="Page navigation example">
+      {% if user_inquiries.has_other_pages %}
+        <ul class="pagination">
+          {% if user_inquiries.has_previous %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ user_inquiries.previous_page_number }}"><i class="fa fa-angle-left"></i></a>
+            </li>
+          {% else %}
+            <li class="page-item disabled">
+              <a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
+            </li>
+          {% endif %}
+
+          {% for i in user_inquiries.paginator.page_range %}
+            {% if user_inquiries.number == i %}
+              <li class="page-item"><a class="page-link">{{ i }}</a></li>
+            {% else %}
+                <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+            {% endif %}
+          {% endfor %}
+
+          {% if user_inquiries.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ user_inquiries.next_page_number }}"><i class="fa fa-angle-right"></i></a>
+            </li>
+          {% else %}
+            <li class="page-item disabled">
+              <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    </nav>
+</div>
