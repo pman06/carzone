@@ -1,0 +1,596 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "0mdecxcwyly6976vbyvoxy87lrfg53wa",
+    "fields": {
+        "session_data": "OTNmYTUxNzBhZjFhMDg0NTNiMzE0ZjE0ZTY0NGE4YjQ0YjU5YjJmZDp7ImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGwsIl9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiOGFjMmQxNjlkOWI3ZDc5ODg3ODNiZTFiM2ZjNTIyNjlmZTU2MmRkNSJ9",
+        "expire_date": "2021-03-29T23:30:36.562Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "johxc5jw1akkk05c1vsqckgmfr0t2l71",
+    "fields": {
+        "session_data": "MGU2ZDJmMzFlNTE3M2QwMzc1MGNlMDBhNTEyMjdlYWQ4NGJjY2M1ZTp7InNvY2lhbGFjY291bnRfc3RhdGUiOlt7Im5leHQiOiIvIiwicHJvY2VzcyI6ImxvZ2luIiwic2NvcGUiOiIiLCJhdXRoX3BhcmFtcyI6IiJ9LCJCeGJUZjl5bDdtTlYiXX0=",
+        "expire_date": "2021-03-29T23:09:32.096Z"
+    }
+},
+{
+    "model": "users.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$tIXIIkU3jqHE$F5HrqorSWCwlA46WI4E485AfPxytqQ9JCxDnp8K/w8s=",
+        "last_login": "2021-03-15T23:06:51.642Z",
+        "is_superuser": true,
+        "email": "kicaha7428@netmail9.com",
+        "first_name": "",
+        "last_name": "",
+        "username": "coolclass",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-03-15T12:00:54.054Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "fields": {
+        "password": "!DBdUfwNBCOAHZ824gdWnYg4kL9ccoH8NXPzfvXKw",
+        "last_login": "2021-03-15T23:06:31.721Z",
+        "is_superuser": false,
+        "email": "cooclass@hotmail.com",
+        "first_name": "Paul",
+        "last_name": "Shoremekun",
+        "username": "paul",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-15T23:04:30.313Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "fields": {
+        "password": "!c8xstPYiCnAUyexkG37EpG2TaK3oiF8dojBpPh0G",
+        "last_login": "2021-03-15T23:30:36.353Z",
+        "is_superuser": false,
+        "email": "thannyjohn@gmail.com",
+        "first_name": "John",
+        "last_name": "Thanny",
+        "username": "john",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-15T23:30:35.537Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 1,
+    "fields": {
+        "first_name": "Adigun",
+        "last_name": "Alapomeji",
+        "car_id": 5,
+        "customer_need": "I'm interested in this",
+        "car_title": "2018 Toyota 4Runner",
+        "city": "Laurel",
+        "state": "MD",
+        "email": "eliteinternetseo@gmail.com",
+        "phone": "4789921087",
+        "message": "",
+        "user_id": "1",
+        "created_date": "2021-03-15T21:48:08.111Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+        "car_title": "2017 Ferrari 488 GTB",
+        "model": "488 GTB",
+        "address": "FunsoSoyemi Street",
+        "city": "Abokuta",
+        "state": "Ogun",
+        "country": "us",
+        "color": "black",
+        "year": 2017,
+        "condition": "new",
+        "price": 26200,
+        "description": "<p>The&nbsp;<strong>Ferrari 488</strong>&nbsp;(Type F142M) is a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Rear_mid-engine,_rear-wheel_drive_layout\" title=\"Rear mid-engine, rear-wheel drive layout\">mid-engine</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/Sports_car\" title=\"Sports car\">sports car</a>&nbsp;produced by the Italian automobile manufacturer&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari\" title=\"Ferrari\">Ferrari</a>. The car replaced the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_458\" title=\"Ferrari 458\">458</a>, being the first mid-engine Ferrari to use a turbocharged V8 since the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_F40\" title=\"Ferrari F40\">F40</a>.</p>\r\n\r\n<p>The car is powered by a 3.9-litre&nbsp;<a href=\"https://en.wikipedia.org/wiki/Twin-turbocharged\" title=\"Twin-turbocharged\">twin-turbocharged</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/V8_engine\" title=\"V8 engine\">V8 engine</a>, smaller in displacement but generating a higher power output than the 458&#39;s&nbsp;<a href=\"https://en.wikipedia.org/wiki/Naturally_aspirated_engine\" title=\"Naturally aspirated engine\">naturally aspirated engine</a>. The 488 GTB was named &quot;The Supercar of the Year 2015&quot; by car magazine&nbsp;<a href=\"https://en.wikipedia.org/wiki/Top_Gear_(magazine)\" title=\"Top Gear (magazine)\"><em>Top Gear</em></a>, as well as becoming&nbsp;<em><a href=\"https://en.wikipedia.org/wiki/Motor_Trend\" title=\"Motor Trend\">Motor Trend</a></em>&#39;s 2017 &quot;Best Driver&#39;s Car&quot;.<a href=\"https://en.wikipedia.org/wiki/Ferrari_488#cite_note-7\">[7]</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/Jeremy_Clarkson\" title=\"Jeremy Clarkson\">Jeremy Clarkson</a>&nbsp;announced the 488 Pista as his 2019 Supercar of the Year.<a href=\"https://en.wikipedia.org/wiki/Ferrari_488#cite_note-8\">[8]</a>&nbsp;The 488 was succeeded by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_F8_Tributo\" title=\"Ferrari F8 Tributo\">F8 Tributo</a>&nbsp;in February 2019.</p>",
+        "car_photo_1": "photo/2021/03/15/1902536891.jpg",
+        "car_photo_2": "photo/2021/03/15/1902536917.jpg",
+        "car_photo_3": "photo/2021/03/15/1902537043.jpg",
+        "car_photo_4": "photo/2021/03/15/1902537077.jpg",
+        "car_photo_5": "photo/2021/03/15/1902537082.jpg",
+        "features": "Adaptive Cruise Control,Airbags,Anti-theft Protection,Auto Start/Stop,Manual Transmission",
+        "body_style": "Sport",
+        "engine": "3.4L",
+        "transmission": "Automatic",
+        "interior": "Gray",
+        "miles": 10000,
+        "doors": "2",
+        "passengers": 4,
+        "vin_no": "DFFE232WEER",
+        "milage": 14,
+        "fuel_type": "Petrol",
+        "no_of_owners": "1",
+        "is_featured": true,
+        "created_date": "2021-03-15T21:09:40.471Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+        "car_title": "2017 Ford Edge",
+        "model": "Edge",
+        "address": "FunsoSoyemi Street",
+        "city": "Abokuta",
+        "state": "Ogun",
+        "country": "ng",
+        "color": "black",
+        "year": 2017,
+        "condition": "new",
+        "price": 50000,
+        "description": "<p>The 2017 Ford Edge ranks in the top third of our midsize SUV rankings. It has a roomy cabin, and compared to its classmates, it boasts agile handling and good gas mileage for the segment.</p>\r\n\r\n<h4>Pros &amp; Cons</h4>\r\n\r\n<ul>\r\n\t<li>Spacious interior</li>\r\n\t<li>Nimble handling</li>\r\n\t<li>Excellent fuel economy</li>\r\n\t<li>Below-average ownership costs</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>Some hard plastics detract from cabin appearance</li>\r\n</ul>",
+        "car_photo_1": "photo/2021/03/15/1901478607.jpg",
+        "car_photo_2": "photo/2021/03/15/1901478618.jpg",
+        "car_photo_3": "photo/2021/03/15/1901478646.jpg",
+        "car_photo_4": "photo/2021/03/15/1901478672.jpg",
+        "car_photo_5": "photo/2021/03/15/1901478687.jpg",
+        "features": "Airbags,Air Conditioning,Bi-Xenon Headlights,Bluetooth Handset",
+        "body_style": "SUV",
+        "engine": "3.4L V7",
+        "transmission": "Automatic",
+        "interior": "Gray",
+        "miles": 2500,
+        "doors": "4",
+        "passengers": 4,
+        "vin_no": "YWHEJ4DJRK",
+        "milage": 25,
+        "fuel_type": "Petrol",
+        "no_of_owners": "1",
+        "is_featured": true,
+        "created_date": "2021-03-15T21:16:48.836Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+        "car_title": "2017 Ford F-250 Super Duty",
+        "model": "F-250 Super Duty",
+        "address": "8077, Sandy Spring Road",
+        "city": "Laurel",
+        "state": "MD",
+        "country": "us",
+        "color": "Navy Blue",
+        "year": 2017,
+        "condition": "used",
+        "price": 12000,
+        "description": "<h2>Overall rating</h2>\r\n\r\n<p>It&#39;s not very often that a new model comes on the market that&#39;s so vastly improved it raises the bar for the entire category. That&#39;s the case, however, with the debut of the all-new 2017 Ford F-250.</p>\r\n\r\n<p>Along with the other two models that make up the Ford Super Duty truck lineup (namely the F-350 and F-450, both reviewed separately), this full-size pickup has been reworked from the ground up. The improvements to the F-250 range from beefier underpinnings and more powerful engines to roomier interiors that can be equipped with a host of convenience and technology features, all designed to make this heavy-duty pickup a good deal more capable.</p>\r\n\r\n<p>Knowing these trucks will be doing some heavy lifting, Ford&#39;s engineers started by giving the F-250 substantially larger frame rails and crossmembers made out of 95 percent high-strength steel. To compensate for the extra bulk, the truck&#39;s body panels and pickup box are now made out of lightweight aluminum (just as the F-150 received recently) that Ford says is both more dent-resistant and makes the new truck hundreds of pounds lighter than previous generations.</p>",
+        "car_photo_1": "photo/2021/03/15/1894300894.jpg",
+        "car_photo_2": "photo/2021/03/15/1894300905.jpg",
+        "car_photo_3": "photo/2021/03/15/1894300920.jpg",
+        "car_photo_4": "photo/2021/03/15/1900155012.jpg",
+        "car_photo_5": "photo/2021/03/15/1900155133.jpg",
+        "features": "Adaptive Cruise Control,Airbags,Anti-theft Protection,Garage Door Opener,Leather Package,Locking Rear Differential,Luggage Compartments",
+        "body_style": "SUV",
+        "engine": "3.4L",
+        "transmission": "Automatic",
+        "interior": "Gray",
+        "miles": 6000,
+        "doors": "2",
+        "passengers": 4,
+        "vin_no": "SJDKFJWNEHW",
+        "milage": 4,
+        "fuel_type": "Petrol",
+        "no_of_owners": "1",
+        "is_featured": false,
+        "created_date": "2021-03-15T21:27:25.573Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+        "car_title": "2017 Jaguar F-PACE",
+        "model": "F-PACE",
+        "address": "8077, Sandy Spring Road",
+        "city": "Laurel",
+        "state": "MD",
+        "country": "us",
+        "color": "black",
+        "year": 2017,
+        "condition": "new",
+        "price": 24000,
+        "description": "<h2>Overall rating</h2>\r\n\r\n<p>Beauty and practicality are so often mutually exclusive. And yet, every so often something comes along that manages to be both fun and sensible, capable of pulling at the heart strings while also satisfying that part of your brain where all your mother&#39;s good advice resides. The 2017 Jaguar F-Pace is a fun-to-drive SUV that also happens to be one of the most spacious, efficient and competitively priced competitors in the compact luxury segment.</p>\r\n\r\n<p>Jaguar&#39;s primary goal when setting out to produce its first SUV was for it to be pretty. Mission</p>",
+        "car_photo_1": "photo/2021/03/15/1902932503.jpg",
+        "car_photo_2": "photo/2021/03/15/1902932514.jpg",
+        "car_photo_3": "photo/2021/03/15/1902932528.jpg",
+        "car_photo_4": "photo/2021/03/15/1902932542.jpg",
+        "car_photo_5": "",
+        "features": "Alarm System,Auto Start/Stop,Locking Rear Differential,Manual Transmission,ParkAssist,Tire Pressure Monitoring",
+        "body_style": "Sport",
+        "engine": "3.4L",
+        "transmission": "Automatic",
+        "interior": "Gray",
+        "miles": 23502,
+        "doors": "4",
+        "passengers": 4,
+        "vin_no": "DSFEJDLSODELWW",
+        "milage": 25,
+        "fuel_type": "Petrol",
+        "no_of_owners": "1",
+        "is_featured": true,
+        "created_date": "2021-03-15T21:32:20.151Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+        "car_title": "2018 Toyota 4Runner",
+        "model": "4Runner",
+        "address": "8077, Sandy Spring Road",
+        "city": "Laurel",
+        "state": "MD",
+        "country": "ng",
+        "color": "Ash",
+        "year": 2018,
+        "condition": "new",
+        "price": 32000,
+        "description": "<p>The 2018 Toyota 4Runner ranks toward the bottom of the midsize SUV class. It has a strong engine, excellent off-road performance, and a good predicted reliability rating, but that&#39;s not enough to offset the SUV&rsquo;s mediocre safety scores, low-grade interior, and so-so handling on pavement.</p>",
+        "car_photo_1": "photo/2021/03/15/1893633875.jpg",
+        "car_photo_2": "photo/2021/03/15/1893633879.jpg",
+        "car_photo_3": "photo/2021/03/15/1893633884.jpg",
+        "car_photo_4": "photo/2021/03/15/1896836883.jpg",
+        "car_photo_5": "photo/2021/03/15/1896836887.jpg",
+        "features": "Adaptive Cruise Control,Airbags,Air Conditioning,Alarm System,Anti-theft Protection,Audio Interface,Automatic Climate Control,Automatic Headlights,Auto Start/Stop,Bi-Xenon Headlights,Audio Interface,Bluetooth Handset,BOSE Surround Sound,Burmester Surround Sound,CD/DVD Autochanger,Cruise Control,Direct Fuel Injection,Electric Parking Brake,Floor Mats,Garage Door Opener,Leather Package,Locking Rear Differential,Luggage Compartments,Manual Transmission,Navigation Module,Online Services,ParkAssist,Porsche Communication,CD/DVD Autochanger,Reversing Camera,Roll-over Protection,Seat Heating,Seat Ventilation,Sound Package Plus,Sport Chrono Package,Steering Wheel Heating,Tire Pressure Monitoring,Universal Audio Interface,Voice Control System,Wind Deflector",
+        "body_style": "Sport",
+        "engine": "3.4L",
+        "transmission": "Automatic",
+        "interior": "Gray",
+        "miles": 23520,
+        "doors": "4",
+        "passengers": 4,
+        "vin_no": "DFFE2ERYEER",
+        "milage": 5440,
+        "fuel_type": "Petrol",
+        "no_of_owners": "1",
+        "is_featured": false,
+        "created_date": "2021-03-15T21:38:26.243Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 6,
+    "fields": {
+        "car_title": "2018 Toyota Corolla",
+        "model": "Corolla",
+        "address": "8077, Sandy Spring Road",
+        "city": "Laurel",
+        "state": "MD",
+        "country": "us",
+        "color": "White",
+        "year": 2018,
+        "condition": "new",
+        "price": 11000,
+        "description": "<p>The reason that we can say that the all-new 2019 Toyota Corolla Hatchback is &ldquo;all-new&rdquo; is because it really doesn&rsquo;t share anything in common with the Corolla sedan that&rsquo;s currently on sale here in the U.S. The Corolla Hatchback is based on the European version of the car, which Toyota calls the Auris. It rides on a brand-new platform &mdash; Toyota&rsquo;s global architecture &mdash; and it&rsquo;s an improvement in pretty much every single way over the current Corolla sedan.</p>",
+        "car_photo_1": "photo/2021/03/15/1900893299.jpg",
+        "car_photo_2": "photo/2021/03/15/1900893311.jpg",
+        "car_photo_3": "photo/2021/03/15/1900893319.jpg",
+        "car_photo_4": "photo/2021/03/15/1900893329.jpg",
+        "car_photo_5": "photo/2021/03/15/1900893391.jpg",
+        "features": "Adaptive Cruise Control,Airbags,Alarm System,Anti-theft Protection,Automatic Headlights,Auto Start/Stop,Bluetooth Handset",
+        "body_style": "Sport",
+        "engine": "2.5",
+        "transmission": "Automatic",
+        "interior": "Gray",
+        "miles": 2500,
+        "doors": "4",
+        "passengers": 4,
+        "vin_no": "ODPSKDLSMAW",
+        "milage": 1234,
+        "fuel_type": "Petrol",
+        "no_of_owners": "2",
+        "is_featured": false,
+        "created_date": "2021-03-15T21:45:32.389Z"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "localhost:8000",
+        "name": "localhost:8000"
+    }
+},
+{
+    "model": "account.emailaddress",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "cooclass@hotmail.com"
+        ],
+        "email": "cooclass@hotmail.com",
+        "verified": false,
+        "primary": true
+    }
+},
+{
+    "model": "account.emailaddress",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "thannyjohn@gmail.com"
+        ],
+        "email": "thannyjohn@gmail.com",
+        "verified": true,
+        "primary": true
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+        "provider": "facebook",
+        "name": "FacebookLogin",
+        "client_id": "429254838396992",
+        "secret": "b91c907a61bfc47f6b0edf4a65586a17",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 2,
+    "fields": {
+        "provider": "google",
+        "name": "Google Login",
+        "client_id": "39281111644-pensg5em8ch96padvral92ss6gds6q2o.apps.googleusercontent.com",
+        "secret": "ii_ptfuFW4jw7-nvcXvJ3wR0",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "cooclass@hotmail.com"
+        ],
+        "provider": "facebook",
+        "uid": "4993331944074616",
+        "last_login": "2021-03-15T23:06:31.324Z",
+        "date_joined": "2021-03-15T23:04:30.405Z",
+        "extra_data": "{\"id\": \"4993331944074616\", \"email\": \"cooclass@hotmail.com\", \"name\": \"Paul Shoremekun\", \"first_name\": \"Paul\", \"last_name\": \"Shoremekun\"}"
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "thannyjohn@gmail.com"
+        ],
+        "provider": "google",
+        "uid": "111694413249339511043",
+        "last_login": "2021-03-15T23:30:35.656Z",
+        "date_joined": "2021-03-15T23:30:35.656Z",
+        "extra_data": "{\"id\": \"111694413249339511043\", \"email\": \"thannyjohn@gmail.com\", \"verified_email\": true, \"name\": \"John Thanny\", \"given_name\": \"John\", \"family_name\": \"Thanny\", \"picture\": \"https://lh5.googleusercontent.com/-hnvQ-4gASTw/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnYwQne33up77zroE3t2p0iESthpw/s96-c/photo.jpg\", \"locale\": \"en\"}"
+    }
+},
+{
+    "model": "socialaccount.socialtoken",
+    "pk": 1,
+    "fields": {
+        "app": 1,
+        "account": 1,
+        "token": "EAAGGZA64pKEABAB6Ou47uZCllX5xecfa3Gb8dsKZAaP2ScLDlrLyvtU1YjhzXPD9HqiFr9D5otZAzB2w58t6sQGfCVClshUFC6YbZB0579xahc8KIWjzhAmrgkMnTHrMhb4fxpNVfOsqILpyHIYBYCAciGxLZBqOqUggK5UmINQAZDZD",
+        "token_secret": "",
+        "expires_at": "2021-05-14T23:04:27.769Z"
+    }
+},
+{
+    "model": "socialaccount.socialtoken",
+    "pk": 2,
+    "fields": {
+        "app": 2,
+        "account": 2,
+        "token": "ya29.a0AfH6SMChnBvxCO2QkhzlQnycdBOZF5q84VkSUq4r-c0-nCCfsJiOuit-nLd9iTg3zc_Zcr6uC7xOtBMP30y3hx1RPOnEueLlDM0_kpsgESRk8MJjmq6RKW4LGLp5Cv12mfU2letff7-V0kPkRbSF3Pz9Ku6E",
+        "token_secret": "",
+        "expires_at": "2021-03-16T00:30:34.007Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-03-15T21:09:41.115Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "2017 Ferrari 488 GTB",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-03-15T21:16:48.861Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-03-15T21:27:25.593Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford F-250 Super Duty",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-03-15T21:32:20.162Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "2017 Jaguar F-PACE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-03-15T21:38:26.251Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "2018 Toyota 4Runner",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-03-15T21:45:32.411Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "6",
+        "object_repr": "2018 Toyota Corolla",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-03-15T22:29:40.283Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "2018 Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Features\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-03-15T23:03:32.721Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "FacebookLogin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-03-15T23:05:33.722Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1",
+        "object_repr": "localhost:8000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-03-15T23:28:47.221Z",
+        "user": [
+            "kicaha7428@netmail9.com"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "2",
+        "object_repr": "Google Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

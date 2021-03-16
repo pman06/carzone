@@ -12,6 +12,7 @@ django-ckeditor = "==5.6.1"
 django-multiselectfield = "==0.1.12"
 django-allauth = "==0.44.0"
 celery = "==4.4.2"
+gunicorn = "*"
 
 [dev-packages]
 

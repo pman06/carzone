@@ -22,6 +22,8 @@ services:
     command: celery -A carzone worker -l INFO
     depends_on:
       - rabbitmq
+    volumes:
+      - .:/code
 
 
   db:
@@ -30,6 +32,8 @@ services:
       - postgres_data:/var/lib/postgresql/data
     environment:
       - "POSTGRES_PASSWORD=myDBPassword11!!"
+    ports:
+      - "6432:5432"
 
 volumes:
   postgres_data:
