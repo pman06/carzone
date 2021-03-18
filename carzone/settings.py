@@ -184,4 +184,4 @@ EMAIL_USE_TLS = True
 
 
 #Whitenoise Settings
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
